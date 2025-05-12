@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - KARMA HD</title>
+    <meta name="description" content="Contacta con nuestro equipo de expertos en tecnología." />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+   
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-container">
+                    <img src="/logo-karma.png" alt="KARMA HD Logo" class="logo-image" onerror="this.style.display='none'">
+                    <span class="logo-text">KARMA HD</span>
+                </div>
+            </a>
+
+           
+            <div class="desktop-nav">
+                <a href="index.html" class="nav-link"><span class="nav-icon monitor"></span>Inicio</a>
+                <a href="servicios.html" class="nav-link"><span class="nav-icon settings"></span>Servicios</a>
+                <a href="productos.html" class="nav-link"><span class="nav-icon cpu"></span>Productos</a>
+                <a href="contacto.html" class="nav-link active"><span class="nav-icon phone"></span>Contacto</a>
+                <a href="contacto.html" class="button primary-button">Cotizar Ahora</a>
+            </div>
+
+          
+            <div class="mobile-nav-button">
+                <button id="mobile-menu-toggle" class="menu-toggle-button">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+
+     
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="container mobile-menu-container">
+                <a href="index.html" class="mobile-nav-link"><span class="nav-icon monitor"></span>Inicio</a>
+                <a href="servicios.html" class="mobile-nav-link"><span class="nav-icon settings"></span>Servicios</a>
+                <a href="productos.html" class="mobile-nav-link"><span class="nav-icon cpu"></span>Productos</a>
+                <a href="contacto.html" class="mobile-nav-link active"><span class="nav-icon phone"></span>Contacto</a>
+                <a href="contacto.html" class="button primary-button mobile-button">Cotizar Ahora</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-description">¿Tienes preguntas? Estamos aquí para ayudarte.</p>
+            
+            <div class="contact-grid">
+           
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Información de contacto</h3>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon phone"></div>
+                            <div class="info-content">
+                                <h4>Teléfono</h4>
+                                <p>+52 56 5055 6259</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon whatsapp"></div>
+                            <div class="info-content">
+                                <h4>WhatsApp</h4>
+                                <p>+52 56 5055 6259</p>
+                                <a href="https://wa.me/5650556259" target="_blank" class="info-link">Enviar mensaje</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon email"></div>
+                            <div class="info-content">
+                                <h4>Correo Electrónico</h4>
+                                <p>carlsoariad@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon location"></div>
+                            <div class="info-content">
+                                <h4>Ubicación</h4>
+                                <p>av.Gregorio Méndez Magaña calle Nicolás bravo</p>
+                                <a href="https://www.google.com/maps/@17.9747665,-92.9762352,3a,49.6y,224.76h,93.56t/data=!3m7!1e1!3m5!1sn6z31OucnqcH1bjwyFGz3A!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-3.5587373780544738%26panoid%3Dn6z31OucnqcH1bjwyFGz3A%26yaw%3D224.76008386200022!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="info-link">Ver en mapa</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon clock"></div>
+                            <div class="info-content">
+                                <h4>Horario</h4>
+                                <p>Lun-Vie: 9:00 am  - 4:00 pm  </p>
+                                <p>sab 10am 2pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3 class="contact-subtitle">Envíanos un mensaje</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">Acepto los términos y condiciones</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="button primary-button">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <div class="toast-title"></div>
+            <div class="toast-description"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

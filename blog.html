@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog y Recursos - KARMA HD</title>
+    <meta name="description" content="Consejos y recursos para mantener tus equipos en óptimas condiciones." />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-container">
+                    <img src="/logo-karma.png" alt="KARMA HD Logo" class="logo-image" onerror="this.style.display='none'">
+                    <span class="logo-text">KARMA HD</span>
+                </div>
+            </a>
+
+            <div class="desktop-nav">
+                <a href="index.html" class="nav-link"><span class="nav-icon monitor"></span>Inicio</a>
+                <a href="servicios.html" class="nav-link"><span class="nav-icon settings"></span>Servicios</a>
+                <a href="productos.html" class="nav-link"><span class="nav-icon cpu"></span>Productos</a>
+                <a href="perfil.html" class="nav-link"><span class="nav-icon user-profile"></span>Perfil Cliente</a>
+                <a href="faqs.html" class="nav-link"><span class="nav-icon help-circle"></span>FAQs</a>
+                <a href="blog.html" class="nav-link active"><span class="nav-icon book"></span>Blog</a>
+                <a href="nosotros.html" class="nav-link"><span class="nav-icon users"></span>Nosotros</a>
+                <a href="contacto.html" class="nav-link"><span class="nav-icon phone"></span>Contacto</a>
+                <a href="contacto.html" class="button primary-button">Cotizar Ahora</a>
+            </div>
+
+            <div class="mobile-nav-button">
+                <button id="mobile-menu-toggle" class="menu-toggle-button">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="container mobile-menu-container">
+                <a href="index.html" class="mobile-nav-link"><span class="nav-icon monitor"></span>Inicio</a>
+                <a href="servicios.html" class="mobile-nav-link"><span class="nav-icon settings"></span>Servicios</a>
+                <a href="productos.html" class="mobile-nav-link"><span class="nav-icon cpu"></span>Productos</a>
+                <a href="perfil.html" class="mobile-nav-link"><span class="nav-icon user-profile"></span>Perfil Cliente</a>
+                <a href="faqs.html" class="mobile-nav-link"><span class="nav-icon help-circle"></span>FAQs</a>
+                <a href="blog.html" class="mobile-nav-link active"><span class="nav-icon book"></span>Blog</a>
+                <a href="nosotros.html" class="mobile-nav-link"><span class="nav-icon users"></span>Nosotros</a>
+                <a href="contacto.html" class="mobile-nav-link"><span class="nav-icon phone"></span>Contacto</a>
+                <a href="contacto.html" class="button primary-button mobile-button">Cotizar Ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="section-title">Blog y Recursos</h1>
+            <p class="section-description">Consejos y guías para mantener tus equipos en óptimo rendimiento</p>
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-categories">
+                <button class="blog-category-button active" data-category="all">Todos</button>
+                <button class="blog-category-button" data-category="mantenimiento">Mantenimiento</button>
+                <button class="blog-category-button" data-category="seguridad">Seguridad</button>
+                <button class="blog-category-button" data-category="rendimiento">Rendimiento</button>
+            </div>
+
+            <div class="blog-grid">
+                
+                <article class="blog-card" data-category="mantenimiento">
+                    <div class="blog-image-container">
+                        <img src="image.png" alt="Limpieza de computadora" class="blog-image">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Mantenimiento</span>
+                        <h3 class="blog-title">Guía completa para la limpieza de tu PC</h3>
+                        <p class="blog-excerpt">
+                            Aprende cómo limpiar correctamente los componentes de tu computadora para extender su vida útil y mantener su rendimiento óptimo.
+                        </p>
+                        <a href="#" class="blog-read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="seguridad">
+                    <div class="blog-image-container">
+                        <img src="image copy.png" alt="Seguridad informática" class="blog-image">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Seguridad</span>
+                        <h3 class="blog-title">Cómo detectar y eliminar virus y malware</h3>
+                        <p class="blog-excerpt">
+                            Descubre las señales de que tu computadora está infectada y los pasos efectivos para eliminar amenazas sin perder información.
+                        </p>
+                        <a href="#" class="blog-read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="rendimiento">
+                    <div class="blog-image-container">
+                        <img src="image copy 3.png" alt="Optimización de rendimiento" class="blog-image">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Rendimiento</span>
+                        <h3 class="blog-title">5 claves para optimizar el rendimiento de Windows</h3>
+                        <p class="blog-excerpt">
+                            Aprende técnicas efectivas para acelerar tu sistema operativo Windows sin necesidad de actualizar tu hardware.
+                        </p>
+                        <a href="#" class="blog-read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="mantenimiento">
+                    <div class="blog-image-container">
+                        <img src="image copy 2.png" alt="Mantenimiento preventivo" class="blog-image">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Mantenimiento</span>
+                        <h3 class="blog-title">Calendario de mantenimiento preventivo para tu equipo</h3>
+                        <p class="blog-excerpt">
+                            Una guía completa con las tareas de mantenimiento que debes realizar cada mes, trimestre y año para mantener tu PC en perfecto estado.
+                        </p>
+                        <a href="#" class="blog-read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="seguridad">
+                    <div class="blog-image-container">
+                        <img src="image copy 4.png" alt="Contraseñas seguras" class="blog-image">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Seguridad</span>
+                        <h3 class="blog-title">Cómo crear y gestionar contraseñas realmente seguras</h3>
+                        <p class="blog-excerpt">
+                            Protege tu identidad digital con consejos prácticos para crear contraseñas robustas y gestores de claves recomendados.
+                        </p>
+                        <a href="#" class="blog-read-more">Leer más</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="rendimiento">
+                    <div class="blog-image-container">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Actualización de hardware" class="blog-image">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-tag">Rendimiento</span>
+                        <h3 class="blog-title">Guía para actualizar componentes: qué priorizar</h3>
+                        <p class="blog-excerpt">
+                            Descubre qué piezas de hardware ofrecen el mayor impacto en el rendimiento cuando tienes un presupuesto limitado.
+                        </p>
+                        <a href="#" class="blog-read-more">Leer más</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="resources-section">
+        <div class="container">
+            <h2 class="section-title">Recursos Útiles</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon download"></div>
+                    <h3 class="resource-title">Guía de Mantenimiento</h3>
+                    <p class="resource-description">Documento PDF con instrucciones paso a paso para mantener tu PC funcionando correctamente.</p>
+                    <a href="#" class="resource-link">Descargar PDF</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon tools"></div>
+                    <h3 class="resource-title">Herramientas Gratuitas</h3>
+                    <p class="resource-description">Lista de software gratuito recomendado para diagnóstico y optimización de equipos.</p>
+                    <a href="#" class="resource-link">Ver Lista</a>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon video"></div>
+                    <h3 class="resource-title">Video Tutoriales</h3>
+                    <p class="resource-description">Colección de videos con instrucciones para resolver problemas comunes.</p>
+                    <a href="#" class="resource-link">Ver Tutoriales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <div class="toast-title"></div>
+            <div class="toast-description"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

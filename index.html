@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KARMA HD - Soluciones Tecnológicas</title>
+    <meta name="description" content="Expertos en reparación de computadoras, soluciones de software y venta de componentes de alta calidad." />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-container">
+                    <img src="/logo-karma.png" alt="KARMA HD Logo" class="logo-image" onerror="this.style.display='none'">
+                    <span class="logo-text">KARMA HD</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="desktop-nav">
+                <a href="index.html" class="nav-link active"><span class="nav-icon monitor"></span>Inicio</a>
+                <a href="servicios.html" class="nav-link"><span class="nav-icon settings"></span>Servicios</a>
+                <a href="productos.html" class="nav-link"><span class="nav-icon cpu"></span>Productos</a>
+                <a href="perfil.html" class="nav-link"><span class="nav-icon user-profile"></span>Perfil Cliente</a>
+                <a href="faqs.html" class="nav-link"><span class="nav-icon help-circle"></span>FAQs</a>
+                <a href="blog.html" class="nav-link"><span class="nav-icon book"></span>Blog</a>
+                <a href="nosotros.html" class="nav-link"><span class="nav-icon users"></span>Nosotros</a>
+                <a href="contacto.html" class="nav-link"><span class="nav-icon phone"></span>Contacto</a>
+                <a href="contacto.html" class="button primary-button">Cotizar Ahora</a>
+            </div>
+
+            <!-- Mobile Navigation Button -->
+            <div class="mobile-nav-button">
+                <button id="mobile-menu-toggle" class="menu-toggle-button">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="container mobile-menu-container">
+                <a href="index.html" class="mobile-nav-link active"><span class="nav-icon monitor"></span>Inicio</a>
+                <a href="servicios.html" class="mobile-nav-link"><span class="nav-icon settings"></span>Servicios</a>
+                <a href="productos.html" class="mobile-nav-link"><span class="nav-icon cpu"></span>Productos</a>
+                <a href="perfil.html" class="mobile-nav-link"><span class="nav-icon user-profile"></span>Perfil Cliente</a>
+                <a href="faqs.html" class="mobile-nav-link"><span class="nav-icon help-circle"></span>FAQs</a>
+                <a href="blog.html" class="mobile-nav-link"><span class="nav-icon book"></span>Blog</a>
+                <a href="nosotros.html" class="mobile-nav-link"><span class="nav-icon users"></span>Nosotros</a>
+                <a href="contacto.html" class="mobile-nav-link"><span class="nav-icon phone"></span>Contacto</a>
+                <a href="contacto.html" class="button primary-button mobile-button">Cotizar Ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <!-- Background overlay with tech pattern -->
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-bg-gradient"></div>
+        
+        <!-- Content -->
+        <div class="container hero-container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="text-gradient">KARMA HD</span>
+                            <br>
+                            <span class="text-light">Soluciones Tecnológicas</span>
+                        </h1>
+                        <p class="hero-description">
+                            Expertos en reparación de computadoras, soluciones de software 
+                            y venta de componentes de alta calidad para optimizar tu experiencia digital.
+                        </p>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="servicios.html" class="button primary-button hero-button">
+                            Nuestros Servicios
+                            <span class="arrow-right-icon"></span>
+                        </a>
+                        <a href="contacto.html" class="button outline-button hero-button">
+                            Contactar
+                        </a>
+                    </div>
+                    
+                    <!-- Features -->
+                    <div class="hero-features">
+                        <div class="feature">
+                            <div class="feature-icon shield"></div>
+                            <span class="feature-text">Garantía Asegurada</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon clock"></div>
+                            <span class="feature-text">Servicio Rápido</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon award"></div>
+                            <span class="feature-text">Calidad Premium</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper animate-float">
+                        <div class="hero-image-glow"></div>
+                        <img 
+                            src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80" 
+                            alt="Reparación de computadoras" 
+                            class="hero-image"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Message -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <div class="toast-title"></div>
+            <div class="toast-description"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

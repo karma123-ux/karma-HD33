@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos - KARMA HD</title>
+    <meta name="description" content="Componentes y productos de alta calidad para tu computadora." />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-container">
+                    <img src="/logo-karma.png" alt="KARMA HD Logo" class="logo-image" onerror="this.style.display='none'">
+                    <span class="logo-text">KARMA HD</span>
+                </div>
+            </a>
+
+            <div class="desktop-nav">
+                <a href="index.html" class="nav-link"><span class="nav-icon monitor"></span>Inicio</a>
+                <a href="servicios.html" class="nav-link"><span class="nav-icon settings"></span>Servicios</a>
+                <a href="productos.html" class="nav-link active"><span class="nav-icon cpu"></span>Productos</a>
+                <a href="contacto.html" class="nav-link"><span class="nav-icon phone"></span>Contacto</a>
+                <a href="contacto.html" class="button primary-button">Cotizar Ahora</a>
+            </div>
+
+            <div class="mobile-nav-button">
+                <button id="mobile-menu-toggle" class="menu-toggle-button">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="container mobile-menu-container">
+                <a href="index.html" class="mobile-nav-link"><span class="nav-icon monitor"></span>Inicio</a>
+                <a href="servicios.html" class="mobile-nav-link"><span class="nav-icon settings"></span>Servicios</a>
+                <a href="productos.html" class="mobile-nav-link active"><span class="nav-icon cpu"></span>Productos</a>
+                <a href="contacto.html" class="mobile-nav-link"><span class="nav-icon phone"></span>Contacto</a>
+                <a href="contacto.html" class="button primary-button mobile-button">Cotizar Ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <p class="section-description">Ofrecemos componentes de alta calidad para mejorar tu experiencia tecnológica.</p>
+            
+            <div class="product-filters">
+                <button class="filter-button active" data-filter="all">Todos</button>
+                <button class="filter-button" data-filter="componentes">Componentes</button>
+                <button class="filter-button" data-filter="perifericos">Periféricos</button>
+                <button class="filter-button" data-filter="almacenamiento">Almacenamiento</button>
+                <button class="filter-button" data-filter="accesorios">Accesorios</button>
+            </div>
+            
+            <div class="products-grid">
+            
+                <div class="product-card" data-category="componentes">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=500&q=80" alt="Procesador AMD Ryzen">
+                        <div class="product-tag">Bestseller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Procesador AMD Ryzen 7 5800X</h3>
+                        <p class="product-description">8 núcleos, 16 hilos, hasta 4.7 GHz</p>
+                        <div class="product-price">$4,999 MXN</div>
+                        <div class="product-actions">
+                            <button class="button outline-button product-button" onclick="showToast('Producto añadido', 'Procesador AMD Ryzen añadido al carrito')">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="componentes">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=500&q=80" alt="Tarjeta Gráfica NVIDIA">
+                        <div class="product-tag">Nuevo</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Tarjeta Gráfica NVIDIA RTX 3070</h3>
+                        <p class="product-description">8GB GDDR6, Ray Tracing, DLSS</p>
+                        <div class="product-price">$12,499 MXN</div>
+                        <div class="product-actions">
+                            <button class="button outline-button product-button" onclick="showToast('Producto añadido', 'Tarjeta Gráfica NVIDIA añadida al carrito')">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="almacenamiento">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=500&q=80" alt="SSD Samsung">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">SSD Samsung 970 EVO Plus</h3>
+                        <p class="product-description">1TB, NVMe M.2, hasta 3500MB/s</p>
+                        <div class="product-price">$2,799 MXN</div>
+                        <div class="product-actions">
+                            <button class="button outline-button product-button" onclick="showToast('Producto añadido', 'SSD Samsung añadido al carrito')">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="componentes">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=500&q=80" alt="Memoria RAM Corsair">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Memoria RAM Corsair Vengeance</h3>
+                        <p class="product-description">16GB (2x8GB) DDR4 3200MHz RGB</p>
+                        <div class="product-price">$1,899 MXN</div>
+                        <div class="product-actions">
+                            <button class="button outline-button product-button" onclick="showToast('Producto añadido', 'Memoria RAM Corsair añadida al carrito')">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="perifericos">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=500&q=80" alt="Teclado Mecánico">
+                        <div class="product-tag">Oferta</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Teclado Mecánico Logitech G Pro</h3>
+                        <p class="product-description">Switches GX Blue, RGB, sin teclado numérico</p>
+                        <div class="product-price">$1,699 MXN</div>
+                        <div class="product-actions">
+                            <button class="button outline-button product-button" onclick="showToast('Producto añadido', 'Teclado Mecánico Logitech añadido al carrito')">comprar</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="product-card" data-category="perifericos">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1613141411244-0e4ac259d217?auto=format&fit=crop&w=500&q=80" alt="Mouse Gaming">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Mouse Gaming Razer DeathAdder V2</h3>
+                        <p class="product-description">20,000 DPI, 8 botones programables, RGB</p>
+                        <div class="product-price">$1,299 MXN</div>
+                        <div class="product-actions">
+                            <button class="button outline-button product-button" onclick="showToast('Producto añadido', 'Mouse Gaming Razer añadido al carrito')">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="perifericos">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1629429407756-446d66f5b24e?auto=format&fit=crop&w=500&q=80" alt="Monitor Gaming">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Monitor Gaming ASUS TUF</h3>
+                        <p class="product-description">24", 1080p, 144Hz, 1ms, IPS</p>
+                        <div class="product-price">$3,999 MXN</div>
+                        <div class="product-actions">
+                            <button class="button outline-button product-button" onclick="showToast('Producto añadido', 'Monitor Gaming ASUS añadido al carrito')">comprar</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.uuI3GZGnyFhBaNwjCTF4UgHaEP&pid=Api&P=0&h=180" alt="Mousepad Gaming">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Mousepad SteelSeries QcK</h3>
+                        <p class="product-description">XL, 900x400mm, base antideslizante</p>
+                        <div class="product-price">$399 MXN</div>
+                        <div class="product-actions">
+                            <button class="button outline-button product-button" onclick="showToast('Producto añadido', 'Mousepad SteelSeries añadido al carrito')">comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <div class="toast-title"></div>
+            <div class="toast-description"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

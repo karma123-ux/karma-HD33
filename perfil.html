@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil del Cliente - KARMA HD</title>
+    <meta name="description" content="Perfil del cliente para conocer sus necesidades y preferencias tecnológicas." />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="logo-link">
+                <div class="logo-container">
+                    <img src="/logo-karma.png" alt="KARMA HD Logo" class="logo-image" onerror="this.style.display='none'">
+                    <span class="logo-text">KARMA HD</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="desktop-nav">
+                <a href="index.html" class="nav-link"><span class="nav-icon monitor"></span>Inicio</a>
+                <a href="servicios.html" class="nav-link"><span class="nav-icon settings"></span>Servicios</a>
+                <a href="productos.html" class="nav-link"><span class="nav-icon cpu"></span>Productos</a>
+                <a href="perfil.html" class="nav-link active"><span class="nav-icon user-profile"></span>Perfil Cliente</a>
+                <a href="contacto.html" class="nav-link"><span class="nav-icon phone"></span>Contacto</a>
+                <a href="contacto.html" class="button primary-button">Cotizar Ahora</a>
+            </div>
+
+            <!-- Mobile Navigation Button -->
+            <div class="mobile-nav-button">
+                <button id="mobile-menu-toggle" class="menu-toggle-button">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="container mobile-menu-container">
+                <a href="index.html" class="mobile-nav-link"><span class="nav-icon monitor"></span>Inicio</a>
+                <a href="servicios.html" class="mobile-nav-link"><span class="nav-icon settings"></span>Servicios</a>
+                <a href="productos.html" class="mobile-nav-link"><span class="nav-icon cpu"></span>Productos</a>
+                <a href="perfil.html" class="mobile-nav-link active"><span class="nav-icon user-profile"></span>Perfil Cliente</a>
+                <a href="contacto.html" class="mobile-nav-link"><span class="nav-icon phone"></span>Contacto</a>
+                <a href="contacto.html" class="button primary-button mobile-button">Cotizar Ahora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <h2 class="section-title">Perfil del Cliente</h2>
+            <p class="section-description">
+                Completa este formulario para ayudarnos a entender mejor tus necesidades tecnológicas y brindarte soluciones personalizadas.
+            </p>
+            
+            <div class="profile-form-container">
+                <form id="profileForm" class="profile-form" action="https://formspree.io/f/xpzvgjvo" method="POST">
+                    <input type="hidden" name="_cc" value="elwilli175@gmail.com">
+                    <input type="hidden" name="_subject" value="Nuevo perfil de cliente - KARMA HD">
+                    <input type="hidden" name="_next" value="https://your-site.com/gracias.html">
+                    <div class="profile-questions">
+                        <div class="question-card">
+                            <div class="question-number">1</div>
+                            <div class="question-content">
+                                <h3>¿Cuál es el principal uso que le das a tu computadora o dispositivos tecnológicos?</h3>
+                                <textarea name="question1" rows="3" placeholder="Describe el uso principal (trabajo, entretenimiento, estudio, etc.)"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="question-card">
+                            <div class="question-number">2</div>
+                            <div class="question-content">
+                                <h3>¿Qué software o aplicaciones utilizas con mayor frecuencia?</h3>
+                                <textarea name="question2" rows="3" placeholder="Enumera los programas que más utilizas"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="question-card">
+                            <div class="question-number">3</div>
+                            <div class="question-content">
+                                <h3>¿Has experimentado problemas recurrentes con tu equipo? ¿Cuáles?</h3>
+                                <textarea name="question3" rows="3" placeholder="Describe los problemas que has tenido"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="question-card">
+                            <div class="question-number">4</div>
+                            <div class="question-content">
+                                <h3>¿Cuándo fue la última vez que actualizaste o renovaste tu equipo informático?</h3>
+                                <select name="question4">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="menos-6-meses">Menos de 6 meses</option>
+                                    <option value="6-12-meses">Entre 6 y 12 meses</option>
+                                    <option value="1-2-anos">Entre 1 y 2 años</option>
+                                    <option value="2-3-anos">Entre 2 y 3 años</option>
+                                    <option value="mas-3-anos">Más de 3 años</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="question-card">
+                            <div class="question-number">5</div>
+                            <div class="question-content">
+                                <h3>¿Qué sistema operativo prefieres o utilizas actualmente?</h3>
+                                <div class="radio-options">
+                                    <label><input type="radio" name="question5" value="windows"> Windows</label>
+                                    <label><input type="radio" name="question5" value="macos"> macOS</label>
+                                    <label><input type="radio" name="question5" value="linux"> Linux</label>
+                                    <label><input type="radio" name="question5" value="otros"> Otros</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="question-card">
+                            <div class="question-number">6</div>
+                            <div class="question-content">
+                                <h3>¿Qué aspectos valoras más en un equipo informático?</h3>
+                                <div class="checkbox-options">
+                                    <label><input type="checkbox" name="question6" value="velocidad"> Velocidad</label>
+                                    <label><input type="checkbox" name="question6" value="almacenamiento"> Capacidad de almacenamiento</label>
+                                    <label><input type="checkbox" name="question6" value="grafica"> Rendimiento gráfico</label>
+                                    <label><input type="checkbox" name="question6" value="durabilidad"> Durabilidad</label>
+                                    <label><input type="checkbox" name="question6" value="portabilidad"> Portabilidad</label>
+                                    <label><input type="checkbox" name="question6" value="precio"> Precio</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="question-card">
+                            <div class="question-number">7</div>
+                            <div class="question-content">
+                                <h3>¿Cuál es tu presupuesto aproximado para inversiones en tecnología?</h3>
+                                <select name="question7">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="menos-5000">Menos de $5,000 MXN</option>
+                                    <option value="5000-10000">$5,000 - $10,000 MXN</option>
+                                    <option value="10000-20000">$10,000 - $20,000 MXN</option>
+                                    <option value="20000-30000">$20,000 - $30,000 MXN</option>
+                                    <option value="mas-30000">Más de $30,000 MXN</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="question-card">
+                            <div class="question-number">8</div>
+                            <div class="question-content">
+                                <h3>¿Con qué frecuencia realizas respaldos de tu información?</h3>
+                                <select name="question8">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="diario">Diariamente</option>
+                                    <option value="semanal">Semanalmente</option>
+                                    <option value="mensual">Mensualmente</option>
+                                    <option value="ocasional">Ocasionalmente</option>
+                                    <option value="nunca">Nunca</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="question-card">
+                            <div class="question-number">9</div>
+                            <div class="question-content">
+                                <h3>¿Te interesaría recibir mantenimiento preventivo programado para tus equipos?</h3>
+                                <div class="radio-options">
+                                    <label><input type="radio" name="question9" value="si"> Sí</label>
+                                    <label><input type="radio" name="question9" value="no"> No</label>
+                                    <label><input type="radio" name="question9" value="talvez"> Tal vez</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="question-card">
+                            <div class="question-number">10</div>
+                            <div class="question-content">
+                                <h3>¿Qué tan importante es para ti la seguridad informática?</h3>
+                                <div class="range-slider">
+                                    <input type="range" name="question10" min="1" max="5" value="3">
+                                    <div class="range-labels">
+                                        <span>Poco importante</span>
+                                        <span>Muy importante</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="question-card">
+                            <div class="question-number">11</div>
+                            <div class="question-content">
+                                <h3>¿Utilizas servicios en la nube? ¿Cuáles?</h3>
+                                <div class="checkbox-options">
+                                    <label><input type="checkbox" name="question11" value="google-drive"> Google Drive</label>
+                                    <label><input type="checkbox" name="question11" value="dropbox"> Dropbox</label>
+                                    <label><input type="checkbox" name="question11" value="onedrive"> OneDrive</label>
+                                    <label><input type="checkbox" name="question11" value="icloud"> iCloud</label>
+                                    <label><input type="checkbox" name="question11" value="otros"> Otros</label>
+                                    <label><input type="checkbox" name="question11" value="ninguno"> No utilizo servicios en la nube</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="question-card">
+                            <div class="question-number">12</div>
+                            <div class="question-content">
+                                <h3>¿Qué tipo de dispositivos utilizas regularmente?</h3>
+                                <div class="checkbox-options">
+                                    <label><input type="checkbox" name="question12" value="pc-escritorio"> PC de escritorio</label>
+                                    <label><input type="checkbox" name="question12" value="laptop"> Laptop</label>
+                                    <label><input type="checkbox" name="question12" value="tablet"> Tablet</label>
+                                    <label><input type="checkbox" name="question12" value="smartphone"> Smartphone</label>
+                                    <label><input type="checkbox" name="question12" value="consola"> Consola de videojuegos</label>
+                                    <label><input type="checkbox" name="question12" value="otros"> Otros</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="question-card">
+                            <div class="question-number">13</div>
+                            <div class="question-content">
+                                <h3>¿Qué tan satisfecho estás con tu actual proveedor de servicios tecnológicos?</h3>
+                                <div class="range-slider">
+                                    <input type="range" name="question13" min="1" max="5" value="3">
+                                    <div class="range-labels">
+                                        <span>Poco satisfecho</span>
+                                        <span>Muy satisfecho</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="question-card">
+                            <div class="question-number">14</div>
+                            <div class="question-content">
+                                <h3>¿Qué servicios tecnológicos te gustaría recibir que actualmente no encuentras?</h3>
+                                <textarea name="question14" rows="3" placeholder="Describe los servicios que te gustaría recibir"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="question-card">
+                            <div class="question-number">15</div>
+                            <div class="question-content">
+                                <h3>¿Cómo prefieres recibir asistencia técnica?</h3>
+                                <div class="radio-options">
+                                    <label><input type="radio" name="question15" value="presencial"> Presencial (en mi domicilio)</label>
+                                    <label><input type="radio" name="question15" value="tienda"> En tienda/taller</label>
+                                    <label><input type="radio" name="question15" value="remota"> Asistencia remota</label>
+                                    <label><input type="radio" name="question15" value="telefonica"> Telefónica</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="button primary-button">Enviar Perfil</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="profile-image-section">
+                <div class="section-divider">
+                    <span>KARMA HD - Soluciones Tecnológicas</span>
+                </div>
+                <div class="client-image-container">
+                    <img src="" alt="Tecnología personalizada para clientes" class="client-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Message -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <div class="toast-title"></div>
+            <div class="toast-description"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
